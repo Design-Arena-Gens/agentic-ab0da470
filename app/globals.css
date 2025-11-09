@@ -1,0 +1,212 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #f4f5fb;
+  color: #1f2430;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #304ffe, #7c4dff);
+  color: white;
+  padding: 3rem 1rem 2.5rem;
+  box-shadow: 0 6px 20px rgba(48, 79, 254, 0.35);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.site-header .tagline {
+  margin-top: 0.75rem;
+  max-width: 48rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 2.5rem 1rem;
+  background: #1b1f2a;
+  color: #dfe2f7;
+}
+
+.site-footer small {
+  opacity: 0.8;
+}
+
+.max-width {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+main {
+  padding: 2rem 1rem 4rem;
+}
+
+.section-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 14px 30px rgba(23, 28, 45, 0.12);
+  border: 1px solid rgba(30, 35, 50, 0.08);
+}
+
+.section-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #1b1f2a;
+}
+
+.section-card h3 {
+  margin-top: 2rem;
+  font-size: 1.35rem;
+  color: #283040;
+}
+
+.section-card p {
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+  color: #40465a;
+}
+
+strong {
+  color: #1f2430;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.keypoint {
+  border-left: 4px solid #304ffe;
+  background: rgba(48, 79, 254, 0.08);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  color: #2c3245;
+}
+
+.form-card {
+  border-radius: 16px;
+  background: #f7f9ff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid rgba(48, 79, 254, 0.12);
+}
+
+.form-card label {
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-card input {
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(23, 28, 45, 0.18);
+  font-size: 1rem;
+}
+
+.primary-button {
+  align-self: flex-start;
+  background: #304ffe;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 15px rgba(48, 79, 254, 0.35);
+}
+
+.result {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #1b1f2a;
+}
+
+.definition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+}
+
+.definition-table th,
+.definition-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(30, 35, 50, 0.12);
+  text-align: left;
+}
+
+.definition-table th {
+  background: rgba(48, 79, 254, 0.08);
+}
+
+.faq {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(23, 28, 45, 0.08);
+  box-shadow: 0 12px 24px rgba(23, 28, 45, 0.08);
+}
+
+.faq-item h4 {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  color: #283040;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 2.5rem 1rem;
+  }
+
+  .site-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .section-card {
+    padding: 1.5rem;
+  }
+}
